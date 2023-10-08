@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-.flex-container {
-  display: flex;
-  background-color: DodgerBlue;
-}
+    <style>
+        .drink{
+            background-color: aqua;
+            display: flex;
+        }
+        p{
+            color: rgb(10, 10, 10);
+           font-size: 25px;
+           padding-left: 40px;
+           font-display: ;
+            
+        }
+        .drink > div{
+            background-color: blueviolet;
+            align-items: center;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+        h1{
+            color: red;
+        }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  padding: 20px;
-  font-size: 30px;
-}
-</style>
-</head>
-<body>
+    </style>
+    <body>
+        <h1>Vishu's favourait drink</h1>
+        <p><b>coco-cola  sprite  slice  beer</b></p>
+        <div class="drink">
+            <div style="flex-basis:100px">30%</div>
+            <div style="flex-basis: 150px;">40%</div>
+            <div style="flex-basis: 100px;">30%</div>
+            <div style="flex-basis: 75px;">20%</div>
+        </div>
 
-<h1>Create a Flex Container</h1>
-
-<div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
-</div>
-
-<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
-
-<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
-
-</body>
+    </body>
 </html>
-
-
